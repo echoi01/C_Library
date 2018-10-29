@@ -9,6 +9,26 @@ My implementation of some of the Standard C Library functions including some add
 ### What is C_Library?
 [Libft][1] is an individual project at [42][2] that requires us to re-create some standard C library functions including some additional ones that can be used later to build a library of useful functions for the rest of the program.
 
+
+### How does it work?
+
+The goal is to create a library called libft.a from the source files so I can later use that library from other projects at 42.
+
+To create that library, after downloading/cloning this project, **cd** into the project, copy all the files from the sub folders to the root directory and finally, call make:
+
+	git clone https://github.com/echoi01/C_Library
+	cd libft
+	make copy
+	make
+  make clean
+
+You should see a *libft.a* file and some object files (.o).
+
+Calling `make clean` will remove the .o files and the .c files from the root
+
+**WARNING:** `make clean` will delete all your files from your root directory. Do not run it if you're using the `Makefile` file. This is why I added the `Makefile-sample` file.
+
+
 ### What's in it?
 Std Lib_C functions | Additional functions | Bonus Functions | Personal Functions
 :----------- | :-----------: | :-----------: | -----------:
@@ -40,21 +60,3 @@ isprint		|| | ft_count2darray
 toupper		| | | ft_strarrmax
 tolower		| | | ft_get_parent_path
 
-
-### How does it work?
-
-The goal is to create a library called libft.a from the source files so I can later use that library from other projects at 42.
-
-To create that library, after downloading/cloning this project, **cd** into the project, copy all the files from the sub folders to the root directory and finally, call make:
-
-	git clone https://github.com/echoi01/C_Library
-	cd libft
-	make copy
-	make
-  make clean
-
-You should see a *libft.a* file and some object files (.o).
-
-Calling `make clean` will remove the .o files and the .c files from the root
-
-**WARNING:** `make clean` will delete all your files from your root directory. Do not run it if you're using the `Makefile` file. This is why I added the `Makefile-sample` file.
