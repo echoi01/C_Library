@@ -9,6 +9,14 @@ SRC = 	libc_atoi.c \
 		libc_isallnum.c \
 		libc_arrcpy.c \
 		libc_arrlen.c \
+		libc_isalpha.c \
+		libc_isascii.c \
+		libc_isdigit.c \
+		libc_isprint.c \
+		libc_itoa.c \
+		libc_lstadd.c \
+		
+
 
 
 OBJ = ${SRC:c=o}
